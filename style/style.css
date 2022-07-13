@@ -77,3 +77,61 @@ body{
     letter-spacing: 0.7px;
     margin-bottom: 25px;
 }
+.photogallery{
+    width: 500px; 
+    height:300px;
+    border:2px solid rgb(75, 75, 75);
+    overflow:auto; 
+    overflow-y:hidden;
+    white-space: nowrap;
+    position:relative;
+    scroll-behavior: smooth;
+}
+.photogallery::-webkit-scrollbar{
+    display:none;
+}
+.photo{
+    display: inline-block;
+    
+}
+.photo img{ 
+    width: 500px; 
+    height:300px;
+    position:relative;
+    display:flex;
+    object-fit: cover;
+    
+}
+.photo p{
+    position:absolute;
+    text-align: center;
+    margin-top:15px;
+    width:100%;
+    z-index: 10;
+    color:black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px;
+}
+#last{
+    background:none;
+    z-index: 10;
+    position:absolute;
+    color:#f0f4f5;
+    font-size: 40px;
+    margin-top:120px;
+    border:0px;
+    float:left;
+    display:block;
+}
+#next{
+    margin-left:474px;
+    background:none;
+    z-index: 10;
+    position:absolute;
+    color:#f0f4f5;
+    font-size: 40px;
+    margin-top:120px;
+    border:0px;
+    display:block;
+    
+}
