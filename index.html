@@ -51,7 +51,24 @@
              </div>
              <div class="session">
                 <b>About ward</b>
-                
+                <button id="last" onclick="scrolll()">❮</button>
+                <button id="next" onclick="scrollr()">❯</button>
+                <div class="photogallery" id="photogallery">
+                    <div class="photo" id="pic1">
+                         <p>Indoor playroom</p>
+                        <img src="indoor.jpg">
+                    </div>
+                    <div class="photo" id="pic2">
+                        <p>Bedroom</p>
+                        <img src="bedroom.jpg">
+                    </div>
+                    <div class="photo" id="pic3">
+                         <p>Outdoor</p>
+                        <img src="indoor.jpg">
+                    </div>
+                    
+
+                </div>
              </div>
              <div class="session" id="fundraising">
                 <b>Fund raising activities</b>
@@ -69,4 +86,14 @@
                 <p class="description"> Aswell as this we will also be hosting a relay race.</p>
              </div>
         </div>
+        <script>
+            function scrolll(){
+                var ll = document.querySelector(".photogallery"); 
+                ll.scrollBy(-508, 0);
+            }
+            function scrollr(){
+                var ll = document.querySelector(".photogallery"); 
+                ll.scrollBy(508, 0);
+            }
+        </script>
     </body>
