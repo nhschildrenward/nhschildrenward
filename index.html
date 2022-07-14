@@ -72,7 +72,12 @@
                     </div>
                     <div class="photo">
                         <p>Reception</p>
-                    <img src="image/reception.png">
+                        <img src="image/reception.png">
+                    </div>
+                    <div class="photo">
+                        <p>Outdoor</p>
+                        <img src="image/outdoor.jpg">
+                    </div>
                </div>
                 </div>
                 <p class="description" style="font-size:18px;margin-top:5px">Concept paediatric ward</p>
@@ -117,18 +122,20 @@
                 ll.scrollBy(-508, 0);
                 scrollva-=1; 
                 if(scrollva == -1){
-                    ll.scrollLeft = 2540; 
-                    scrollva = 4;
+                    ll.scrollLeft = 508*5; 
+                    scrollva = 5;
                 }
+                console.log(scrollva);
             }
             function scrollr(){
                 var ll = document.querySelector(".photogallery"); 
                 ll.scrollBy(508, 0);
                 scrollva+=1; 
-                if(scrollva == 5){
+                if(scrollva == 6){
                     ll.scrollLeft = 0;
                     scrollva = 0;
                 }
+                console.log(scrollva);
             }
 
             
