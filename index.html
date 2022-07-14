@@ -107,17 +107,28 @@
              </div>
         </div>
         <div class="bottom">
-            <p> © 2022 Isaac@Work experience team 2 </p>
+            <p>© 2022 Isaac@Work experience team 2 </p>
             <p>Do not copy unless you hire me, </p>
         </div>
         <script>
+            var scrollva = 0;
             function scrolll(){
                 var ll = document.querySelector(".photogallery"); 
                 ll.scrollBy(-508, 0);
+                scrollva-=1; 
+                if(scrollva == -1){
+                    ll.scrollLeft = 2540; 
+                    scrollva = 4;
+                }
             }
             function scrollr(){
                 var ll = document.querySelector(".photogallery"); 
                 ll.scrollBy(508, 0);
+                scrollva+=1; 
+                if(scrollva == 5){
+                    ll.scrollLeft = 0;
+                    scrollva = 0;
+                }
             }
 
             
